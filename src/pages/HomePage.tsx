@@ -16,7 +16,7 @@ const PARTNER_SVG = (
 
 function HeroSection() {
   return (
-    <section className="relative min-h-screen bg-[#EFEFEF] flex flex-col" aria-labelledby="hero-heading">
+    <section className="relative min-h-[62vh] sm:min-h-screen bg-[#EFEFEF] flex flex-col" aria-labelledby="hero-heading">
       {/* Shader overlay */}
       <div className="absolute inset-0 z-10 pointer-events-none">
         <Shader style={{ width: '100%', height: '100%' }} disableTelemetry>
