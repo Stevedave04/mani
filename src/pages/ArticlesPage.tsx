@@ -1,132 +1,8 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 import SEO, { LOCAL_BUSINESS_LD } from '../components/SEO'
-
-// ─── Article data ─────────────────────────────────────────────────────────────
-
-type Category = 'SEO' | 'Social Media' | 'Strategy'
-
-interface Article {
-  title: string
-  url: string
-  date: string
-  dateISO: string
-  category: Category
-  excerpt: string
-  readTime: string
-  image?: string
-}
-
-const ARTICLES: Article[] = [
-  {
-    title: "Navigating Google's Latest SEO Updates: What Northern Ireland SMEs Need to Know",
-    url: 'https://marketingadviceni.com/navigating-google-s-latest-seo-updates-what-northern-ireland-smes-need-to-know/',
-    date: '30 Sep 2025',
-    dateISO: '2025-09-30',
-    category: 'SEO',
-    excerpt:
-      "Northern Ireland SMEs are feeling the pressure as Google's latest updates shake up search rankings. Here's what's changed, what it means for your business, and the steps you need to take now.",
-    readTime: '5 min read',
-    image: 'https://marketingadviceni.com/wp-content/uploads/2025/09/featured-image-1759219211-1400x788.jpeg',
-  },
-  {
-    title: 'A Step-by-Step Guide to Crafting a Winning Social Media Strategy for Local Businesses',
-    url: 'https://marketingadviceni.com/a-step-by-step-guide-to-crafting-a-winning-social-media-strategy-for-local-businesses/',
-    date: '29 Sep 2025',
-    dateISO: '2025-09-29',
-    category: 'Social Media',
-    excerpt:
-      "You're pouring time and resources into social media, yet your online presence feels invisible. This guide outlines a practical step-by-step strategy for local businesses in Northern Ireland.",
-    readTime: '6 min read',
-    image: 'https://marketingadviceni.com/wp-content/uploads/2025/09/featured-image-1759132816-1200x800.jpeg',
-  },
-  {
-    title: 'Unlocking Growth: Innovative SEO Strategies for Small Businesses in Northern Ireland',
-    url: 'https://marketingadviceni.com/unlocking-growth-innovative-seo-strategies-for-small-businesses-in-northern-ireland/',
-    date: '28 Sep 2025',
-    dateISO: '2025-09-28',
-    category: 'SEO',
-    excerpt:
-      'Discover innovative SEO strategies tailored for small businesses in Northern Ireland to enhance online visibility, attract local customers, and boost your digital marketing results.',
-    readTime: '5 min read',
-  },
-  {
-    title: 'Unlocking Growth: Personalised Marketing Advice for Northern Irish Startups',
-    url: 'https://marketingadviceni.com/unlocking-growth-personalised-marketing-advice-for-northern-irish-startups/',
-    date: '27 Sep 2025',
-    dateISO: '2025-09-27',
-    category: 'Strategy',
-    excerpt:
-      'Personalised marketing can accelerate growth for Northern Irish startups by enhancing digital presence and driving real results. Tailored strategies offer a clear path to transforming brand identity.',
-    readTime: '5 min read',
-  },
-  {
-    title: 'Harnessing the Power of Video Content: Boosting Engagement and Brand Awareness',
-    url: 'https://marketingadviceni.com/harnessing-the-power-of-video-content-boosting-engagement-and-brand-awareness/',
-    date: '26 Sep 2025',
-    dateISO: '2025-09-26',
-    category: 'Social Media',
-    excerpt:
-      'Video content is crucial for Northern Ireland SMEs looking to enhance engagement and brand awareness. Here are tailored strategies, including clear narratives and platform-specific formats, to boost visibility.',
-    readTime: '5 min read',
-    image: 'https://marketingadviceni.com/wp-content/uploads/2025/09/featured-image-1758873620-1200x800.jpeg',
-  },
-  {
-    title: 'Mastering Social Media Success: A Comprehensive Guide to Creating Engaging Campaigns',
-    url: 'https://marketingadviceni.com/mastering-social-media-success-a-comprehensive-guide-to-creating-engaging-campaigns-for-business-growth/',
-    date: '26 Feb 2024',
-    dateISO: '2024-02-26',
-    category: 'Social Media',
-    excerpt:
-      'Social media marketing campaigns play a pivotal role in enhancing brand visibility, engaging audiences, and driving business growth. A well-executed campaign can significantly impact your online presence.',
-    readTime: '7 min read',
-    image: 'https://marketingadviceni.com/wp-content/uploads/2024/02/Mastering-Social-Media-Success-A-Comprehensive-Guide-to-Creating-Engaging-Campaigns-for-Business-Growth-1400x788.png',
-  },
-  {
-    title: 'The Power of Storytelling in Marketing',
-    url: 'https://marketingadviceni.com/the-power-of-storytelling-in-marketing/',
-    date: '4 Sep 2023',
-    dateISO: '2023-09-04',
-    category: 'Strategy',
-    excerpt:
-      'Incorporating compelling narratives into your marketing doesn\'t just grab attention, it builds lasting emotional connections. Here\'s how storytelling works and how to apply it to your business.',
-    readTime: '6 min read',
-    image: 'https://marketingadviceni.com/wp-content/uploads/2023/09/The-Power-of-Storytelling-in-Marketing-1400x788.png',
-  },
-  {
-    title: '5 Low-Cost Marketing Strategies for Northern Ireland Businesses',
-    url: 'https://marketingadviceni.com/5-low-cost-marketing-strategies-for-northern-ireland/',
-    date: '14 Jul 2023',
-    dateISO: '2023-07-14',
-    category: 'Strategy',
-    excerpt:
-      'Budget-friendly marketing approaches that actually work, from website optimisation and social engagement to email campaigns, influencer partnerships, and local business collaborations.',
-    readTime: '5 min read',
-    image: 'https://marketingadviceni.com/wp-content/uploads/2023/07/Boost-Your-Brand-5-Low-Cost-Marketing-Strategies-for-Northern-Ireland-Businesses-1400x788.png',
-  },
-  {
-    title: 'The Vital Role of Local SEO Links in Today\'s Digital Landscape',
-    url: 'https://marketingadviceni.com/the-vital-role-of-local-seo-links-in-todays-digital-landscape/',
-    date: '8 Jul 2023',
-    dateISO: '2023-07-08',
-    category: 'SEO',
-    excerpt:
-      'Local SEO links strengthen domain authority, increase organic traffic, and improve search engine rankings. Here\'s why they matter and how to build them strategically for businesses in Ireland.',
-    readTime: '5 min read',
-    image: 'https://marketingadviceni.com/wp-content/uploads/2023/07/The-Vital-Role-of-Local-SEO-Links-in-Todays-Digital-Landscape-1400x788.png',
-  },
-  {
-    title: 'How to Increase Social Media Traffic for Local Businesses in Northern Ireland',
-    url: 'https://marketingadviceni.com/how-to-increase-social-media-traffic-for-local-businesses-in-northern-ireland/',
-    date: '27 Mar 2023',
-    dateISO: '2023-03-27',
-    category: 'Social Media',
-    excerpt:
-      'Actionable strategies for driving more traffic from social media: creating engaging content, using visuals effectively, running contests, and leveraging targeted social advertising.',
-    readTime: '5 min read',
-    image: 'https://marketingadviceni.com/wp-content/uploads/2023/03/How-to-Increase-Social-Media-Traffic-for-Local-Businesses-in-Northern-Ireland-1-1400x788.png',
-  },
-]
+import { ARTICLES, type Article, type Category } from '../data/articles'
 
 // ─── Category config ──────────────────────────────────────────────────────────
 
@@ -175,10 +51,8 @@ function CardImage({ image, category, title }: { image?: string; category: Categ
 function FeaturedArticle({ article }: { article: Article }) {
   const { pill } = CATEGORY_STYLES[article.category]
   return (
-    <a
-      href={article.url}
-      target="_blank"
-      rel="noopener noreferrer"
+    <Link
+      to={`/articles/${article.slug}`}
       className="group block bg-white rounded-3xl border border-slate-100 overflow-hidden hover:shadow-md transition-all duration-300"
       aria-label={`Read: ${article.title}`}
     >
@@ -209,7 +83,7 @@ function FeaturedArticle({ article }: { article: Article }) {
           </div>
         </div>
       </div>
-    </a>
+    </Link>
   )
 }
 
@@ -218,10 +92,8 @@ function FeaturedArticle({ article }: { article: Article }) {
 function ArticleCard({ article }: { article: Article }) {
   const { pill } = CATEGORY_STYLES[article.category]
   return (
-    <a
-      href={article.url}
-      target="_blank"
-      rel="noopener noreferrer"
+    <Link
+      to={`/articles/${article.slug}`}
       className="group flex flex-col bg-white rounded-2xl border border-slate-100 overflow-hidden hover:shadow-md hover:border-slate-200 transition-all duration-300"
       aria-label={`Read: ${article.title}`}
     >
@@ -250,7 +122,7 @@ function ArticleCard({ article }: { article: Article }) {
           </span>
         </div>
       </div>
-    </a>
+    </Link>
   )
 }
 
@@ -263,16 +135,16 @@ const ARTICLES_LD = [
     '@type': 'Blog',
     name: 'Marketing Advice NI | Articles',
     description: 'Digital marketing insights, SEO strategies, and social media tips for businesses in Northern Ireland and Ireland.',
-    url: 'https://www.marketingadviceni.com/articles',
+    url: 'https://mani-7z6.pages.dev/articles',
     publisher: {
       '@type': 'Organization',
       name: 'Marketing Advice NI',
       url: 'https://www.marketingadviceni.com',
     },
-    blogPost: ARTICLES.map(({ title, url, dateISO, excerpt, category }) => ({
+    blogPost: ARTICLES.map(({ title, slug, dateISO, excerpt, category }) => ({
       '@type': 'BlogPosting',
       headline: title,
-      url,
+      url: `https://mani-7z6.pages.dev/articles/${slug}`,
       datePublished: dateISO,
       description: excerpt,
       keywords: category,
@@ -318,7 +190,7 @@ export default function ArticlesPage() {
                 <span className="text-white text-[12px] font-semibold leading-none">✦</span>
               </div>
               <span className="text-[13px] font-medium border border-gray-200 rounded-full px-4 py-1.5 text-gray-900">
-                Insights & guides
+                Insights &amp; guides
               </span>
             </div>
 
@@ -384,7 +256,7 @@ export default function ArticlesPage() {
                 {rest.length > 0 && (
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
                     {rest.map((article) => (
-                      <ArticleCard key={article.url} article={article} />
+                      <ArticleCard key={article.slug} article={article} />
                     ))}
                   </div>
                 )}
@@ -407,15 +279,15 @@ export default function ArticlesPage() {
                 Book a free 30-minute consultation. No pitch, just honest advice.
               </p>
             </div>
-            <a
-              href="/free-consultation"
+            <Link
+              to="/free-consultation"
               className="group flex-shrink-0 inline-flex items-center gap-2 bg-[#F26522] hover:bg-[#e05a1a] text-white text-[13px] font-medium rounded-full pl-5 pr-2 py-2 transition-colors cursor-pointer"
             >
               <span>Book a free call</span>
               <div className="w-7 h-7 bg-white rounded-full flex items-center justify-center group-hover:-rotate-45 transition-transform duration-500">
                 <ArrowRight size={13} className="text-[#F26522]" />
               </div>
-            </a>
+            </Link>
           </div>
         </section>
       </main>

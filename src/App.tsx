@@ -10,6 +10,7 @@ import SeoPage from './pages/services/SeoPage'
 import SocialMediaPage from './pages/services/SocialMediaPage'
 import WebDesignPage from './pages/services/WebDesignPage'
 import ArticlesPage from './pages/ArticlesPage'
+import ArticlePage from './pages/ArticlePage'
 import FaqPage from './pages/FaqPage'
 import PartnersPage from './pages/PartnersPage'
 import LegalPage from './pages/LegalPage'
@@ -60,6 +61,7 @@ export default function App() {
           <Route path="partners" element={<PartnersPage />} />
           <Route path="contact" element={<ContactPage />} />
           <Route path="articles" element={<ArticlesPage />} />
+          <Route path="articles/:slug" element={<ArticlePage />} />
           <Route path="faq" element={<FaqPage />} />
           <Route path="legal" element={<LegalPage />} />
           <Route path="privacy" element={<PrivacyPage />} />

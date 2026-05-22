@@ -58,3 +58,68 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* ── Article prose ──────────────────────────────────────────────────────────── */
+.prose-article {
+  color: #374151;
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 100%;
+}
+
+.prose-article p {
+  margin-top: 0;
+  margin-bottom: 1.4em;
+}
+
+.prose-article h2 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #111827;
+  letter-spacing: -0.02em;
+  margin-top: 2.4em;
+  margin-bottom: 0.75em;
+  line-height: 1.25;
+}
+
+.prose-article h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-top: 1.8em;
+  margin-bottom: 0.5em;
+  line-height: 1.35;
+}
+
+.prose-article ul,
+.prose-article ol {
+  padding-left: 1.5em;
+  margin-bottom: 1.4em;
+}
+
+.prose-article ul {
+  list-style-type: disc;
+}
+
+.prose-article ol {
+  list-style-type: decimal;
+}
+
+.prose-article li {
+  margin-bottom: 0.4em;
+}
+
+.prose-article strong {
+  font-weight: 600;
+  color: #111827;
+}
+
+.prose-article a {
+  color: #F26522;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.prose-article a:hover {
+  color: #e05a1a;
+}
