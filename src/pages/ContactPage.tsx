@@ -61,7 +61,7 @@ function ContactForm() {
 
   if (submitted) {
     return (
-      <div className="flex flex-col items-center justify-center text-center py-16 px-6">
+      <div className="flex flex-col items-center justify-center text-center py-10 px-6">
         <div className="w-14 h-14 rounded-full bg-[#F26522]/10 flex items-center justify-center mb-5">
           <Send size={24} className="text-[#F26522]" />
         </div>
@@ -194,7 +194,7 @@ export default function ContactPage() {
       <main>
         {/* ── Main contact section ──────────────────────────────────────────── */}
         <section
-          className="bg-white py-14 sm:py-16 lg:py-24 px-5 sm:px-8 lg:px-12"
+          className="bg-white py-8 sm:py-16 lg:py-24 px-5 sm:px-8 lg:px-12"
           aria-labelledby="contact-heading"
         >
           <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_1.3fr] gap-12 lg:gap-20 items-start">

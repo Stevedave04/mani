@@ -63,13 +63,13 @@ export default function PrivacyPage() {
 
       <main>
         <section
-          className="bg-white py-14 sm:py-16 lg:py-24 px-5 sm:px-8 lg:px-12"
+          className="bg-white py-8 sm:py-16 lg:py-24 px-5 sm:px-8 lg:px-12"
           aria-labelledby="privacy-heading"
         >
           <div className="max-w-[860px] mx-auto">
 
             {/* Header */}
-            <div className="mb-12 pb-10 border-b border-slate-100">
+            <div className="mb-6 pb-6 border-b border-slate-100">
               <p className="text-[12px] font-semibold text-[#F26522] uppercase tracking-widest mb-4">
                 Legal
               </p>

@@ -181,7 +181,7 @@ export default function ArticlesPage() {
       <main>
         {/* ── Header ────────────────────────────────────────────────────────── */}
         <section
-          className="bg-white pt-14 pb-10 sm:pt-16 sm:pb-12 lg:pt-20 lg:pb-14 px-5 sm:px-8 lg:px-12"
+          className="bg-white pt-9 pb-7 sm:pt-16 sm:pb-12 lg:pt-20 lg:pb-14 px-5 sm:px-8 lg:px-12"
           aria-labelledby="articles-heading"
         >
           <div className="max-w-[1440px] mx-auto">
@@ -237,7 +237,7 @@ export default function ArticlesPage() {
 
         {/* ── Articles ──────────────────────────────────────────────────────── */}
         <section
-          className="bg-[#F5F5F5] py-8 sm:py-10 lg:py-12 pb-20 sm:pb-24 lg:pb-28 px-5 sm:px-8 lg:px-12"
+          className="bg-[#F5F5F5] py-8 sm:py-10 lg:py-12 pb-12 sm:pb-24 lg:pb-28 px-5 sm:px-8 lg:px-12"
           aria-live="polite"
         >
           <div className="max-w-[1440px] mx-auto">

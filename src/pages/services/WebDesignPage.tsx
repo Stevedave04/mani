@@ -164,11 +164,11 @@ export default function WebDesignPage() {
 
       <main>
         {/* ── Hero ──────────────────────────────────────────────────────────── */}
-        <section className="relative overflow-hidden pt-16 pb-20 sm:pt-20 sm:pb-28 lg:pt-28 lg:pb-36 px-5 sm:px-8 lg:px-12" aria-labelledby="web-hero-heading">
+        <section className="relative overflow-hidden pt-10 pb-14 sm:pt-20 sm:pb-28 lg:pt-28 lg:pb-36 px-5 sm:px-8 lg:px-12" aria-labelledby="web-hero-heading">
           <HlsVideoBackground />
           <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(15,23,42,0.92)_0%,rgba(15,23,42,0.72)_55%,rgba(15,23,42,0.55)_100%)]" />
           <div className="relative z-10 max-w-[1440px] mx-auto">
-            <nav className="flex items-center gap-2 text-[13px] text-slate-500 mb-10 sm:mb-14" aria-label="Breadcrumb">
+            <nav className="flex items-center gap-2 text-[13px] text-slate-500 mb-5 sm:mb-14" aria-label="Breadcrumb">
               <Link to="/" className="hover:text-slate-300 transition-colors">Home</Link>
               <span>/</span>
               <Link to="/services" className="hover:text-slate-300 transition-colors">Services</Link>
@@ -220,7 +220,7 @@ export default function WebDesignPage() {
         </section>
 
         {/* ── What's included ───────────────────────────────────────────────── */}
-        <section id="what-we-do" className="bg-white py-16 sm:py-20 lg:py-28 px-5 sm:px-8 lg:px-12" aria-labelledby="web-services-heading">
+        <section id="what-we-do" className="bg-white py-9 sm:py-20 lg:py-28 px-5 sm:px-8 lg:px-12" aria-labelledby="web-services-heading">
           <div className="max-w-[1440px] mx-auto">
             <div className="flex items-center gap-3 mb-8">
               <div className="w-7 h-7 rounded-full bg-gray-900 flex items-center justify-center flex-shrink-0">
@@ -228,7 +228,7 @@ export default function WebDesignPage() {
               </div>
               <span className="text-[13px] font-medium border border-gray-200 rounded-full px-4 py-1.5 text-gray-900">What's included</span>
             </div>
-            <h2 id="web-services-heading" className="font-medium leading-[1.1] tracking-[-0.02em] text-gray-900 mb-12 sm:mb-16" style={{ fontSize: 'clamp(1.5rem, 3.5vw, 2.8rem)' }}>
+            <h2 id="web-services-heading" className="font-medium leading-[1.1] tracking-[-0.02em] text-gray-900 mb-6 sm:mb-16" style={{ fontSize: 'clamp(1.5rem, 3.5vw, 2.8rem)' }}>
               A full build from strategy
               <br className="hidden sm:block" />
               <span className="sm:hidden"> </span>
@@ -249,7 +249,7 @@ export default function WebDesignPage() {
         </section>
 
         {/* ── Process ───────────────────────────────────────────────────────── */}
-        <section className="bg-[#F5F5F5] py-16 sm:py-20 lg:py-28 px-5 sm:px-8 lg:px-12" aria-labelledby="web-process-heading">
+        <section className="bg-[#F5F5F5] py-9 sm:py-20 lg:py-28 px-5 sm:px-8 lg:px-12" aria-labelledby="web-process-heading">
           <div className="max-w-[1440px] mx-auto">
             <div className="flex items-center gap-3 mb-8">
               <div className="w-7 h-7 rounded-full bg-gray-900 flex items-center justify-center flex-shrink-0">
@@ -257,7 +257,7 @@ export default function WebDesignPage() {
               </div>
               <span className="text-[13px] font-medium border border-gray-300 rounded-full px-4 py-1.5 text-gray-900">How we work</span>
             </div>
-            <h2 id="web-process-heading" className="font-medium leading-[1.1] tracking-[-0.02em] text-gray-900 mb-14 sm:mb-20" style={{ fontSize: 'clamp(1.5rem, 3.5vw, 2.8rem)' }}>
+            <h2 id="web-process-heading" className="font-medium leading-[1.1] tracking-[-0.02em] text-gray-900 mb-7 sm:mb-20" style={{ fontSize: 'clamp(1.5rem, 3.5vw, 2.8rem)' }}>
               Strategy first.
               <br className="hidden sm:block" />
               <span className="sm:hidden"> </span>
@@ -276,7 +276,7 @@ export default function WebDesignPage() {
         </section>
 
         {/* ── Case study ────────────────────────────────────────────────────── */}
-        <section className="bg-white py-16 sm:py-20 lg:py-28 px-5 sm:px-8 lg:px-12" aria-labelledby="web-case-study-heading">
+        <section className="bg-white py-9 sm:py-20 lg:py-28 px-5 sm:px-8 lg:px-12" aria-labelledby="web-case-study-heading">
           <div className="max-w-[1440px] mx-auto">
             <div className="flex items-center gap-3 mb-8">
               <div className="w-7 h-7 rounded-full bg-gray-900 flex items-center justify-center flex-shrink-0">
@@ -322,7 +322,7 @@ export default function WebDesignPage() {
         </section>
 
         {/* ── FAQ ───────────────────────────────────────────────────────────── */}
-        <section className="bg-[#F9F9FB] py-16 sm:py-20 lg:py-28 px-5 sm:px-8 lg:px-12" aria-labelledby="web-faq-heading">
+        <section className="bg-[#F9F9FB] py-9 sm:py-20 lg:py-28 px-5 sm:px-8 lg:px-12" aria-labelledby="web-faq-heading">
           <div className="max-w-[860px] mx-auto">
             <div className="flex items-center gap-3 mb-8">
               <div className="w-7 h-7 rounded-full bg-gray-900 flex items-center justify-center flex-shrink-0">
@@ -330,13 +330,13 @@ export default function WebDesignPage() {
               </div>
               <span className="text-[13px] font-medium border border-gray-200 rounded-full px-4 py-1.5 text-gray-900">Common questions</span>
             </div>
-            <h2 id="web-faq-heading" className="font-medium leading-[1.1] tracking-[-0.02em] text-gray-900 mb-10 sm:mb-14" style={{ fontSize: 'clamp(1.5rem, 3.5vw, 2.8rem)' }}>Web design FAQs</h2>
+            <h2 id="web-faq-heading" className="font-medium leading-[1.1] tracking-[-0.02em] text-gray-900 mb-5 sm:mb-14" style={{ fontSize: 'clamp(1.5rem, 3.5vw, 2.8rem)' }}>Web design FAQs</h2>
             <FaqAccordion />
           </div>
         </section>
 
         {/* ── CTA ───────────────────────────────────────────────────────────── */}
-        <section className="bg-[#0F172A] py-16 sm:py-20 lg:py-28 px-5 sm:px-8 lg:px-12">
+        <section className="bg-[#0F172A] py-9 sm:py-20 lg:py-28 px-5 sm:px-8 lg:px-12">
           <div className="max-w-[1440px] mx-auto text-center">
             <h2 className="font-medium tracking-[-0.03em] text-white mb-5" style={{ fontSize: 'clamp(1.75rem, 5vw, 3.5rem)' }}>
               Ready to build something that works?

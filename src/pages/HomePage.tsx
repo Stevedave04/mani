@@ -107,7 +107,7 @@ function AboutSection() {
 
   return (
     <section
-      className="bg-white pt-16 sm:pt-20 lg:pt-32 pb-12 sm:pb-16 lg:pb-24 overflow-hidden"
+      className="bg-white pt-10 sm:pt-20 lg:pt-32 pb-8 sm:pb-16 lg:pb-24 overflow-hidden"
       aria-labelledby="about-heading"
     >
       <div className="max-w-[1440px] mx-auto">
@@ -122,7 +122,7 @@ function AboutSection() {
 
         <h2
           id="about-heading"
-          className="font-medium leading-[1.12] tracking-[-0.02em] text-gray-900 mb-12 sm:mb-16 lg:mb-28 px-5 sm:px-8 lg:px-12"
+          className="font-medium leading-[1.12] tracking-[-0.02em] text-gray-900 mb-7 sm:mb-16 lg:mb-28 px-5 sm:px-8 lg:px-12"
           style={{ fontSize: 'clamp(1.5rem, 4vw, 3.2rem)' }}
         >
           A premier digital marketing agency,
@@ -204,7 +204,7 @@ function AboutSection() {
 function CaseStudiesSection() {
   return (
     <section
-      className="bg-[#F5F5F5] pt-16 sm:pt-20 lg:pt-28 pb-16 sm:pb-20 lg:pb-28"
+      className="bg-[#F5F5F5] pt-10 sm:pt-20 lg:pt-28 pb-10 sm:pb-20 lg:pb-28"
       aria-labelledby="clients-heading"
     >
       <div className="max-w-[1440px] mx-auto">
@@ -219,7 +219,7 @@ function CaseStudiesSection() {
 
         <h2
           id="clients-heading"
-          className="font-medium leading-[1.08] tracking-[-0.03em] text-gray-900 mb-10 sm:mb-14 lg:mb-16 px-5 sm:px-8 lg:px-12"
+          className="font-medium leading-[1.08] tracking-[-0.03em] text-gray-900 mb-5 sm:mb-14 lg:mb-16 px-5 sm:px-8 lg:px-12"
           style={{ fontSize: 'clamp(1.75rem, 7vw, 4.2rem)' }}
         >
           Our clients

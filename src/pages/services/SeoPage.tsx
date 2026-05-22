@@ -183,14 +183,14 @@ export default function SeoPage() {
       <main>
         {/* ── Hero ──────────────────────────────────────────────────────────── */}
         <section
-          className="relative overflow-hidden pt-16 pb-20 sm:pt-20 sm:pb-28 lg:pt-28 lg:pb-36 px-5 sm:px-8 lg:px-12"
+          className="relative overflow-hidden pt-10 pb-14 sm:pt-20 sm:pb-28 lg:pt-28 lg:pb-36 px-5 sm:px-8 lg:px-12"
           aria-labelledby="seo-hero-heading"
         >
           <HlsVideoBackground />
           <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(15,23,42,0.92)_0%,rgba(15,23,42,0.72)_55%,rgba(15,23,42,0.55)_100%)]" />
           <div className="relative z-10 max-w-[1440px] mx-auto">
             {/* Breadcrumb */}
-            <nav className="flex items-center gap-2 text-[13px] text-slate-500 mb-10 sm:mb-14" aria-label="Breadcrumb">
+            <nav className="flex items-center gap-2 text-[13px] text-slate-500 mb-5 sm:mb-14" aria-label="Breadcrumb">
               <Link to="/" className="hover:text-slate-300 transition-colors">Home</Link>
               <span>/</span>
               <Link to="/services" className="hover:text-slate-300 transition-colors">Services</Link>
@@ -253,7 +253,7 @@ export default function SeoPage() {
         {/* ── What's included ───────────────────────────────────────────────── */}
         <section
           id="what-we-do"
-          className="bg-white py-16 sm:py-20 lg:py-28 px-5 sm:px-8 lg:px-12"
+          className="bg-white py-9 sm:py-20 lg:py-28 px-5 sm:px-8 lg:px-12"
           aria-labelledby="seo-services-heading"
         >
           <div className="max-w-[1440px] mx-auto">
@@ -268,7 +268,7 @@ export default function SeoPage() {
 
             <h2
               id="seo-services-heading"
-              className="font-medium leading-[1.1] tracking-[-0.02em] text-gray-900 mb-12 sm:mb-16"
+              className="font-medium leading-[1.1] tracking-[-0.02em] text-gray-900 mb-6 sm:mb-16"
               style={{ fontSize: 'clamp(1.5rem, 3.5vw, 2.8rem)' }}
             >
               Everything needed to rank
@@ -296,7 +296,7 @@ export default function SeoPage() {
 
         {/* ── Process ───────────────────────────────────────────────────────── */}
         <section
-          className="bg-[#F5F5F5] py-16 sm:py-20 lg:py-28 px-5 sm:px-8 lg:px-12"
+          className="bg-[#F5F5F5] py-9 sm:py-20 lg:py-28 px-5 sm:px-8 lg:px-12"
           aria-labelledby="seo-process-heading"
         >
           <div className="max-w-[1440px] mx-auto">
@@ -311,7 +311,7 @@ export default function SeoPage() {
 
             <h2
               id="seo-process-heading"
-              className="font-medium leading-[1.1] tracking-[-0.02em] text-gray-900 mb-14 sm:mb-20"
+              className="font-medium leading-[1.1] tracking-[-0.02em] text-gray-900 mb-7 sm:mb-20"
               style={{ fontSize: 'clamp(1.5rem, 3.5vw, 2.8rem)' }}
             >
               SEO that compounds.
@@ -340,7 +340,7 @@ export default function SeoPage() {
 
         {/* ── Case study ────────────────────────────────────────────────────── */}
         <section
-          className="bg-white py-16 sm:py-20 lg:py-28 px-5 sm:px-8 lg:px-12"
+          className="bg-white py-9 sm:py-20 lg:py-28 px-5 sm:px-8 lg:px-12"
           aria-labelledby="seo-case-study-heading"
         >
           <div className="max-w-[1440px] mx-auto">
@@ -410,7 +410,7 @@ export default function SeoPage() {
 
         {/* ── FAQ ───────────────────────────────────────────────────────────── */}
         <section
-          className="bg-[#F9F9FB] py-16 sm:py-20 lg:py-28 px-5 sm:px-8 lg:px-12"
+          className="bg-[#F9F9FB] py-9 sm:py-20 lg:py-28 px-5 sm:px-8 lg:px-12"
           aria-labelledby="seo-faq-heading"
         >
           <div className="max-w-[860px] mx-auto">
@@ -425,7 +425,7 @@ export default function SeoPage() {
 
             <h2
               id="seo-faq-heading"
-              className="font-medium leading-[1.1] tracking-[-0.02em] text-gray-900 mb-10 sm:mb-14"
+              className="font-medium leading-[1.1] tracking-[-0.02em] text-gray-900 mb-5 sm:mb-14"
               style={{ fontSize: 'clamp(1.5rem, 3.5vw, 2.8rem)' }}
             >
               SEO FAQs
@@ -436,7 +436,7 @@ export default function SeoPage() {
         </section>
 
         {/* ── CTA ───────────────────────────────────────────────────────────── */}
-        <section className="bg-[#0F172A] py-16 sm:py-20 lg:py-28 px-5 sm:px-8 lg:px-12">
+        <section className="bg-[#0F172A] py-9 sm:py-20 lg:py-28 px-5 sm:px-8 lg:px-12">
           <div className="max-w-[1440px] mx-auto text-center">
             <h2
               className="font-medium tracking-[-0.03em] text-white mb-5"

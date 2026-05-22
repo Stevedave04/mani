@@ -69,7 +69,7 @@ export default function AboutPage() {
       <main>
         {/* ── Hero ──────────────────────────────────────────────────────────── */}
         <section
-          className="bg-white pt-14 pb-16 sm:pt-16 sm:pb-20 lg:pt-24 lg:pb-28 px-5 sm:px-8 lg:px-12"
+          className="bg-white pt-9 pb-10 sm:pt-16 sm:pb-20 lg:pt-24 lg:pb-28 px-5 sm:px-8 lg:px-12"
           aria-labelledby="about-hero-heading"
         >
           <div className="max-w-[1440px] mx-auto">
@@ -135,7 +135,7 @@ export default function AboutPage() {
 
         {/* ── What makes us different ───────────────────────────────────────── */}
         <section
-          className="bg-[#F5F5F5] py-16 sm:py-20 lg:py-28 px-5 sm:px-8 lg:px-12"
+          className="bg-[#F5F5F5] py-9 sm:py-20 lg:py-28 px-5 sm:px-8 lg:px-12"
           aria-labelledby="values-heading"
         >
           <div className="max-w-[1440px] mx-auto">
@@ -150,7 +150,7 @@ export default function AboutPage() {
 
             <h2
               id="values-heading"
-              className="font-medium leading-[1.1] tracking-[-0.02em] text-gray-900 mb-12 sm:mb-16"
+              className="font-medium leading-[1.1] tracking-[-0.02em] text-gray-900 mb-6 sm:mb-16"
               style={{ fontSize: 'clamp(1.5rem, 3.5vw, 2.8rem)' }}
             >
               Not a typical agency.
@@ -172,7 +172,7 @@ export default function AboutPage() {
 
         {/* ── What we do ────────────────────────────────────────────────────── */}
         <section
-          className="bg-white py-16 sm:py-20 lg:py-28 px-5 sm:px-8 lg:px-12"
+          className="bg-white py-9 sm:py-20 lg:py-28 px-5 sm:px-8 lg:px-12"
           aria-labelledby="services-overview-heading"
         >
           <div className="max-w-[1440px] mx-auto">

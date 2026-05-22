@@ -127,7 +127,7 @@ function ConsultationForm() {
 
   if (submitted) {
     return (
-      <div className="flex flex-col items-center justify-center text-center py-16 px-6">
+      <div className="flex flex-col items-center justify-center text-center py-10 px-6">
         <div className="w-14 h-14 rounded-full bg-[#F26522]/10 flex items-center justify-center mb-5">
           <CheckCircle2 size={28} className="text-[#F26522]" />
         </div>
@@ -311,7 +311,7 @@ export default function ConsultationPage() {
 
       <main>
         {/* ── Hero + Form ───────────────────────────────────────────────────── */}
-        <section className="bg-white py-14 sm:py-16 lg:py-24 px-5 sm:px-8 lg:px-12" aria-labelledby="consult-heading">
+        <section className="bg-white py-8 sm:py-16 lg:py-24 px-5 sm:px-8 lg:px-12" aria-labelledby="consult-heading">
           <div className="max-w-[1440px] mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-12 lg:gap-20 items-start">
 
@@ -383,13 +383,13 @@ export default function ConsultationPage() {
 
         {/* ── How it works ──────────────────────────────────────────────────── */}
         <section
-          className="bg-[#F5F5F5] py-14 sm:py-16 lg:py-24 px-5 sm:px-8 lg:px-12"
+          className="bg-[#F5F5F5] py-8 sm:py-16 lg:py-24 px-5 sm:px-8 lg:px-12"
           aria-labelledby="how-it-works-heading"
         >
           <div className="max-w-[1440px] mx-auto">
             <h2
               id="how-it-works-heading"
-              className="font-medium leading-[1.1] tracking-[-0.02em] text-gray-900 mb-12 sm:mb-16 text-center"
+              className="font-medium leading-[1.1] tracking-[-0.02em] text-gray-900 mb-6 sm:mb-16 text-center"
               style={{ fontSize: 'clamp(1.4rem, 3vw, 2.4rem)' }}
             >
               How it works
@@ -414,7 +414,7 @@ export default function ConsultationPage() {
 
         {/* ── FAQ ───────────────────────────────────────────────────────────── */}
         <section
-          className="bg-white py-14 sm:py-16 lg:py-24 px-5 sm:px-8 lg:px-12"
+          className="bg-white py-8 sm:py-16 lg:py-24 px-5 sm:px-8 lg:px-12"
           aria-labelledby="consult-faq-heading"
         >
           <div className="max-w-[720px] mx-auto">
@@ -430,7 +430,7 @@ export default function ConsultationPage() {
         </section>
 
         {/* ── Other services ────────────────────────────────────────────────── */}
-        <section className="bg-[#F9F9FB] py-14 sm:py-16 lg:py-20 px-5 sm:px-8 lg:px-12 border-t border-slate-100">
+        <section className="bg-[#F9F9FB] py-8 sm:py-16 lg:py-20 px-5 sm:px-8 lg:px-12 border-t border-slate-100">
           <div className="max-w-[1440px] mx-auto text-center">
             <p className="text-[13px] font-semibold text-gray-500 uppercase tracking-widest mb-5">
               Our services

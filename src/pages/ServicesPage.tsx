@@ -109,7 +109,7 @@ export default function ServicesPage() {
       <main>
         {/* ── Hero ──────────────────────────────────────────────────────────── */}
         <section
-          className="bg-white pt-14 pb-16 sm:pt-16 sm:pb-20 lg:pt-24 lg:pb-28 px-5 sm:px-8 lg:px-12"
+          className="bg-white pt-9 pb-10 sm:pt-16 sm:pb-20 lg:pt-24 lg:pb-28 px-5 sm:px-8 lg:px-12"
           aria-labelledby="services-hero-heading"
         >
           <div className="max-w-[1440px] mx-auto">
@@ -160,7 +160,7 @@ export default function ServicesPage() {
 
         {/* ── Service cards ─────────────────────────────────────────────────── */}
         <section
-          className="bg-[#F5F5F5] py-16 sm:py-20 lg:py-28 px-5 sm:px-8 lg:px-12"
+          className="bg-[#F5F5F5] py-9 sm:py-20 lg:py-28 px-5 sm:px-8 lg:px-12"
           aria-label="Our services"
         >
           <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6">
@@ -212,7 +212,7 @@ export default function ServicesPage() {
         </section>
 
         {/* ── CTA ───────────────────────────────────────────────────────────── */}
-        <section className="bg-[#0F172A] py-16 sm:py-20 lg:py-24 px-5 sm:px-8 lg:px-12">
+        <section className="bg-[#0F172A] py-9 sm:py-20 lg:py-24 px-5 sm:px-8 lg:px-12">
           <div className="max-w-[1440px] mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
             <div>
               <h2

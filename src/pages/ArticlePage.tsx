@@ -239,7 +239,7 @@ export default function ArticlePage() {
         {/* ── Related articles ──────────────────────────────────────────────── */}
         {related.length > 0 && (
           <section
-            className="bg-[#F5F5F5] px-5 sm:px-8 lg:px-12 py-12 sm:py-16"
+            className="bg-[#F5F5F5] px-5 sm:px-8 lg:px-12 py-8 sm:py-16"
             aria-labelledby="related-heading"
           >
             <div className="max-w-[1200px] mx-auto">

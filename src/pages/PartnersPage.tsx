@@ -78,7 +78,7 @@ export default function PartnersPage() {
       <main>
         {/* ── Hero ──────────────────────────────────────────────────────────── */}
         <section
-          className="bg-white pt-14 pb-10 sm:pt-16 sm:pb-12 lg:pt-20 lg:pb-14 px-5 sm:px-8 lg:px-12"
+          className="bg-white pt-9 pb-7 sm:pt-16 sm:pb-12 lg:pt-20 lg:pb-14 px-5 sm:px-8 lg:px-12"
           aria-labelledby="partners-heading"
         >
           <div className="max-w-[1440px] mx-auto">
@@ -110,7 +110,7 @@ export default function PartnersPage() {
 
         {/* ── Certification partners ────────────────────────────────────────── */}
         <section
-          className="bg-[#F5F5F5] py-14 sm:py-16 lg:py-24 px-5 sm:px-8 lg:px-12"
+          className="bg-[#F5F5F5] py-8 sm:py-16 lg:py-24 px-5 sm:px-8 lg:px-12"
           aria-labelledby="cert-heading"
         >
           <div className="max-w-[1440px] mx-auto">
@@ -167,7 +167,7 @@ export default function PartnersPage() {
 
         {/* ── Sectors ───────────────────────────────────────────────────────── */}
         <section
-          className="bg-white py-14 sm:py-16 lg:py-24 px-5 sm:px-8 lg:px-12"
+          className="bg-white py-8 sm:py-16 lg:py-24 px-5 sm:px-8 lg:px-12"
           aria-labelledby="sectors-heading"
         >
           <div className="max-w-[1440px] mx-auto">
@@ -205,7 +205,7 @@ export default function PartnersPage() {
 
         {/* ── Client roster ─────────────────────────────────────────────────── */}
         <section
-          className="bg-[#F5F5F5] py-14 sm:py-16 lg:py-24 px-5 sm:px-8 lg:px-12"
+          className="bg-[#F5F5F5] py-8 sm:py-16 lg:py-24 px-5 sm:px-8 lg:px-12"
           aria-labelledby="clients-heading"
         >
           <div className="max-w-[1440px] mx-auto">
@@ -243,7 +243,7 @@ export default function PartnersPage() {
         </section>
 
         {/* ── CTA ───────────────────────────────────────────────────────────── */}
-        <section className="bg-[#0F172A] py-14 sm:py-16 px-5 sm:px-8 lg:px-12">
+        <section className="bg-[#0F172A] py-8 sm:py-16 px-5 sm:px-8 lg:px-12">
           <div className="max-w-[1440px] mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-8">
             <div>
               <h2
