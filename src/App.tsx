@@ -10,6 +10,10 @@ import SeoPage from './pages/services/SeoPage'
 import SocialMediaPage from './pages/services/SocialMediaPage'
 import WebDesignPage from './pages/services/WebDesignPage'
 import ArticlesPage from './pages/ArticlesPage'
+import FaqPage from './pages/FaqPage'
+import PartnersPage from './pages/PartnersPage'
+import LegalPage from './pages/LegalPage'
+import PrivacyPage from './pages/PrivacyPage'
 
 // ─── Coming soon placeholder ──────────────────────────────────────────────────
 
@@ -53,10 +57,12 @@ export default function App() {
           <Route path="services/social-media" element={<SocialMediaPage />} />
           <Route path="services/web-design" element={<WebDesignPage />} />
           <Route path="about" element={<AboutPage />} />
-          <Route path="partners" element={<ComingSoon page="Partners" />} />
+          <Route path="partners" element={<PartnersPage />} />
           <Route path="contact" element={<ContactPage />} />
           <Route path="articles" element={<ArticlesPage />} />
-          <Route path="faq" element={<ComingSoon page="Marketing FAQs" />} />
+          <Route path="faq" element={<FaqPage />} />
+          <Route path="legal" element={<LegalPage />} />
+          <Route path="privacy" element={<PrivacyPage />} />
           <Route path="*" element={<ComingSoon page="Page not found" />} />
         </Route>
       </Routes>

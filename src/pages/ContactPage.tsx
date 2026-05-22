@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Mail, Phone, MapPin, Clock, Send } from 'lucide-react'
+import { Mail, MapPin, Clock, Send } from 'lucide-react'
 import SEO, { LOCAL_BUSINESS_LD } from '../components/SEO'
 import { OrangeButton } from '../components/ui/OrangeButton'
 
@@ -25,12 +25,6 @@ const DETAILS = [
     href: 'mailto:hello@marketingadviceni.com',
   },
   {
-    Icon: Phone,
-    label: 'Phone',
-    value: '+44 (0)28 7100 0000',
-    href: 'tel:+442871000000',
-  },
-  {
     Icon: MapPin,
     label: 'Location',
     value: 'Derry/Londonderry, Northern Ireland',
@@ -39,7 +33,7 @@ const DETAILS = [
   {
     Icon: Clock,
     label: 'Office hours',
-    value: 'Mon – Fri, 9:00 am – 5:30 pm',
+    value: 'Mon to Fri, 9:00 am to 5:30 pm',
     href: null,
   },
 ]
